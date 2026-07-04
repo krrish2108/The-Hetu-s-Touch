@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export function Gallery() {
   const photos = [
@@ -13,12 +13,12 @@ export function Gallery() {
     { src: "/images/real-gallery-6.jpeg", className: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
   ];
 
-  const container = {
+  const container: Variants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.1 } }
   };
   
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
