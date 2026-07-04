@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 
 export function Gallery() {
   const photos = [
-    { src: "/images/real-gallery-1.jpeg", className: "col-span-2 row-span-2 md:col-span-2 md:row-span-2" },
+    { src: "/images/real-gallery-7.jpeg", className: "col-span-2 row-span-2 md:col-span-2 md:row-span-2" },
     { src: "/images/real-gallery-2.jpeg", className: "col-span-1 row-span-1" },
     { src: "/images/real-gallery-3.jpeg", className: "col-span-1 row-span-1" },
     { src: "/images/real-gallery-4.jpeg", className: "col-span-2 row-span-2 md:col-span-1 md:row-span-2" },

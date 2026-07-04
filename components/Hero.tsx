@@ -58,7 +58,7 @@ export function Hero() {
           >
             <motion.div style={{ y, height: "120%", top: "-10%" }} className="absolute inset-0 w-full">
               <Image
-                src="/images/real-gallery-7.jpeg"
+                src="/images/real-gallery-1.jpeg"
                 alt="Beautiful gel nails"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
