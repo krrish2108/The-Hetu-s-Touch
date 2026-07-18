@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 export function Services() {
   const services = [
     {
+      title: "Press-ON Set",
+      price: "₹450",
+      description: "Custom-made, reusable press-on nails for salon-quality looks at home.",
+      features: ["Custom designs", "Includes prep kit", "Reusable sets", "Easy application"],
+      popular: false,
+    },
+    {
       title: "Gel Polish",
       price: "₹300",
       description: "Long-lasting, high-gloss gel polish in a wide array of premium colors.",
@@ -18,13 +25,6 @@ export function Services() {
       description: "Flawless, durable extensions to give your nails the perfect length and shape.",
       features: ["Custom length", "Expert shaping", "Premium finish", "Lasts 3-4 weeks"],
       popular: true,
-    },
-    {
-      title: "Press-ON Set",
-      price: "₹450",
-      description: "Custom-made, reusable press-on nails for salon-quality looks at home.",
-      features: ["Custom designs", "Perfect fit sizing", "Reusable sets", "Easy application"],
-      popular: false,
     },
     {
       title: "Toe Gel",

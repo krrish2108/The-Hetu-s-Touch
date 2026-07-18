@@ -6,8 +6,8 @@ import { motion, Variants } from "framer-motion";
 export function Gallery() {
   const photos = [
     { src: "/images/real-gallery-7.jpeg", className: "col-span-2 row-span-2 md:col-span-2 md:row-span-2" },
-    { src: "/images/real-gallery-2.jpeg", className: "col-span-1 row-span-1" },
-    { src: "/images/real-gallery-3.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/new-nails-1.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/new-nails-2.jpeg", className: "col-span-1 row-span-1" },
     { src: "/images/real-gallery-4.jpeg", className: "col-span-2 row-span-2 md:col-span-1 md:row-span-2" },
     { src: "/images/real-gallery-5.jpeg", className: "col-span-2 row-span-1 md:col-span-2 md:row-span-1" },
     { src: "/images/real-gallery-6.jpeg", className: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
@@ -49,13 +49,13 @@ export function Gallery() {
           initial="hidden" 
           whileInView="show" 
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-2 md:grid-cols-4 grid-rows-[auto] gap-4 md:gap-6 max-w-5xl mx-auto auto-rows-[180px] md:auto-rows-[240px]"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto auto-rows-[180px] md:auto-rows-[240px]"
         >
           {photos.map((photo, idx) => (
             <motion.div 
               variants={item}
               key={idx} 
-              className={`relative rounded-3xl overflow-hidden group bg-muted border border-border/50 ${photo.className}`}
+              className={`relative w-full h-full min-h-[180px] md:min-h-[240px] rounded-3xl overflow-hidden group bg-muted border border-border/50 ${photo.className}`}
             >
               <Image
                 src={photo.src}

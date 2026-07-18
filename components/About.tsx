@@ -39,8 +39,9 @@ export function About() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-background shadow-2xl z-10">
               <Image
                 src="/images/hetu-profile.jpeg"
-                alt="Hetu Prajapati"
+                alt="Hetu - Founder & Lead Nail Technician"
                 fill
+                sizes="(max-width: 768px) 100vw, 500px"
                 className="object-cover object-top"
               />
             </div>
