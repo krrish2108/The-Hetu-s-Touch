@@ -7,10 +7,10 @@ export function Services() {
   const services = [
     {
       title: "Gel Polish",
-      price: "₹250",
+      price: "₹300",
       description: "Long-lasting, high-gloss gel polish in a wide array of premium colors.",
       features: ["Cuticle care", "Nail shaping", "Gel application", "Lasts 2-3 weeks"],
-      popular: false,
+      popular: true,
     },
     {
       title: "Nail Extension",
@@ -18,6 +18,13 @@ export function Services() {
       description: "Flawless, durable extensions to give your nails the perfect length and shape.",
       features: ["Custom length", "Expert shaping", "Premium finish", "Lasts 3-4 weeks"],
       popular: true,
+    },
+    {
+      title: "Press-ON Set",
+      price: "₹450",
+      description: "Custom-made, reusable press-on nails for salon-quality looks at home.",
+      features: ["Custom designs", "Perfect fit sizing", "Reusable sets", "Easy application"],
+      popular: false,
     },
     {
       title: "Toe Gel",
@@ -49,7 +56,7 @@ export function Services() {
           </p>
         </motion.div>
         
-        <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
           {services.map((service, idx) => (
             <motion.div
               key={service.title}
@@ -57,8 +64,8 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className={`relative flex flex-col p-8 bg-card rounded-3xl shadow-sm border ${
-                service.popular ? "border-primary shadow-primary/20 shadow-2xl scale-105 z-10" : "border-border mt-0 md:mt-4 mb-0 md:mb-4"
+              className={`relative flex flex-col p-8 bg-card rounded-3xl shadow-sm border h-full ${
+                service.popular ? "border-primary shadow-primary/20 shadow-2xl z-10" : "border-border"
               }`}
             >
               {service.popular && (
