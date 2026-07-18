@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Services() {
   const services = [
     {
-      title: "Press-ON Set",
+      title: "Press-ON Nail Set",
       price: "₹450",
       description: "Custom-made, reusable press-on nails for salon-quality looks at home.",
       features: ["Custom designs", "Includes prep kit", "Reusable sets", "Easy application"],
